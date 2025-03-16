@@ -44,26 +44,28 @@ This are the commands that I use most
  
 
 ## ASDF
-| Combination                   | Description                |
-| ----------------------------- | -------------------------- |
-| `asdf plugin list`            | show all installed plugins |
-| `asdf plugin add $name $url`  | add plugin                 |
-| `asdf plugin remove $name`    | remove plugin              |
-| `asdf plugin update $name`    | update plugin              |
-| `asdf install $name $version` | install plugin in project  |
-| `asdf local $name $version`   | install plugin locally     |
+| Command                       | Description                     |
+| ----------------------------- | ------------------------------- |
+| `asdf plugin list`            | show all installed plugins      |
+| `asdf plugin add $name $url`  | add plugin                      |
+| `asdf plugin remove $name`    | remove plugin                   |
+| `asdf plugin update $name`    | update plugin                   |
+| `asdf install $name $version` | install plugin in project       |
+| `asdf local $name $version`   | install plugin locally ($PWD)   |
+| `asdf global $name $version`  | install plugin globally ($HOME) |
 
 ## Tmux
 ### commands
-| Combination                   | Description          |
-| ----------------------------- | -------------------- |
-| `tmux kill-server`            | kill all sessions    |
-| `tmux list-sessions`          | show all sessions    |
-| `tmux new -s $name`           | create a new session |
-| `tmux source ~/.tmux.conf`    | reload tmux app      |
-| ` tmux kill-session -t $name` | kill single session  |
+| Combination                  | Description          |
+| ---------------------------- | -------------------- |
+| `tmux kill-server`           | kill all sessions    |
+| `tmux list-sessions`         | show all sessions    |
+| `tmux new -s $name`          | create a new session |
+| `tmux source ~/.tmux.conf`   | reload tmux app      |
+| `tmux kill-session -t $name` | kill single session  |
+
 ### app
-| Combination | Description                |
+| Command     | Description                |
 | ----------- | -------------------------- |
 | ⌃ s         | super key                  |
 | ⌃ s + 0-9   | move between windows       |
@@ -74,6 +76,14 @@ This are the commands that I use most
 | ⌃ s + x     | kill current window        |
 | ⌃ s + \|    | split pane vertical        |
 | ⌃ s + -     | split pane horizontal      |
+| ⌃ s + ⇧ + I | install tmux packages      |
+
+## Misc
+| Command          | Description             |
+| ---------------- | ----------------------- |
+| `p10k configure` | runs p10k configuration |
+| ``               |                         |
+
 
 
 ## References
