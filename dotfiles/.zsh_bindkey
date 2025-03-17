@@ -1,0 +1,2 @@
+bindkey '^e' zsh_gh_copilot_explain
+bindkey '^g' zsh_gh_copilot_suggest

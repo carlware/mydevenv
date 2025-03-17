@@ -19,11 +19,14 @@ plugins=(
 	z 
 	zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-github-copilot
 )
 source $ZSH/oh-my-zsh.sh
 
+
 # default editor
 export EDITOR="vim"
+# vim mode on
 set -o vi
 
 # increase ulimit
@@ -35,6 +38,7 @@ ulimit -n 2048
 
 # flutter
 export FLUTTER_ROOT="$(asdf where flutter)"
+#export PATH=$PATH:~/development/flutter/bin
 
 # golang
 export GOPATH=$HOME/go
@@ -47,9 +51,13 @@ export GPG_TTY=$(tty)
 
 # rust
 export RUST_WITHOUT=rust-docs
+# source "$HOME/.cargo/env"
 
 # custom scripts
 source ~/.scripts.sh
+# init key bindings
+source ~/.zsh_bindkey
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
