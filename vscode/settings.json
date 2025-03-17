@@ -1,0 +1,91 @@
+{
+    // Editor
+    "editor.fontFamily": "Cascadia Code, Fira Code, Menlo, Monaco",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 1.5,
+    "editor.letterSpacing": 0.2,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "off",
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+    "editor.quickSuggestions": {
+        "other": "off",
+        "comments": "off",
+        "strings": "off"
+    },
+    "editor.rulers": [
+        120
+    ],
+    "editor.matchBrackets": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.overviewRulerBorder": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.guides.indentation": false,
+    "breadcrumbs.enabled": false,
+    // Terminal
+    "terminal.integrated.fontFamily": "CaskaydiaMonoNFM-Regular",
+    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.unicodeVersion": "11",
+    "terminal.explorerKind": "external",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    // Workbench
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Palenight (Mild Contrast)",
+    // "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.showTabs": "none",
+    "window.zoomLevel": 0.5,
+    "window.title": "${rootNameShort}${separator}${dirty}${activeEditorShort}",
+    // git
+    "git.autofetch": true,
+    "git.mergeEditor": true,
+    // search
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+        "**/vendor": true,
+        "**/public": true,
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/package-lock.json": true,
+    },
+    // apps specific
+    "cSpell.userWords": [
+        "olivere",
+        "ollama",
+        "salesloft",
+        "sobjects",
+        "stretchr"
+    ],
+    "cSpell.ignoreWords": [
+        "cotype"
+    ],
+    "indenticator.width": 0.1,
+    "indenticator.color.dark": "rgba(255,255,255,0.3)",
+    "database-client.autoSync": true,
+    // langs specific
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "never",
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": "off"
+    },
+}
