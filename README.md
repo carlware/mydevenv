@@ -38,12 +38,16 @@ In the dotfiles are included the dotfiles and the configuration for vscode
 # install zsh
 brew install zsh
 brew install asdf
+brew install tmux
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install powerline10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+
+# install tmux plugins manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # install some zsh packages
 # syntax highlight
