@@ -36,8 +36,7 @@ set -o vi
 ulimit -n 2048
 
 # asdf
-. "/usr/local/opt/asdf/libexec/asdf.sh"
-. "/usr/local/opt/asdf/etc/bash_completion.d/asdf.bash"
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # flutter
 export FLUTTER_ROOT="$(asdf where flutter)"

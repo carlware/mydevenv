@@ -44,15 +44,15 @@ This are the commands that I use most
  
 
 ## ASDF
-| Command                       | Description                     |
-| ----------------------------- | ------------------------------- |
-| `asdf plugin list`            | show all installed plugins      |
-| `asdf plugin add $name $url`  | add plugin                      |
-| `asdf plugin remove $name`    | remove plugin                   |
-| `asdf plugin update $name`    | update plugin                   |
-| `asdf install $name $version` | install plugin in project       |
-| `asdf local $name $version`   | install plugin locally ($PWD)   |
-| `asdf global $name $version`  | install plugin globally ($HOME) |
+| Command                       | Description                          |
+| ----------------------------- | ------------------------------------ |
+| `asdf plugin list`            | show all installed plugins           |
+| `asdf plugin add $name $url`  | add plugin                           |
+| `asdf plugin remove $name`    | remove plugin                        |
+| `asdf plugin update $name`    | update plugin                        |
+| `asdf install $name $version` | install plugin in project            |
+| `asdf set $name $version`     | install plugin locally ($PWD)        |
+| `asdf set $name $version`     | install plugin globally (move to ~/) |
 
 ## Tmux
 ### commands
