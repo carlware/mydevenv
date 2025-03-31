@@ -23,8 +23,6 @@ plugins=(
   zsh-github-copilot
 )
 source $ZSH/oh-my-zsh.sh
-# fix not loading peco
-source ~/.zsh/zsh-peco-history/zsh-peco-history.zsh
 
 
 # default editor
@@ -67,3 +65,5 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# fix not loading peco
+source ~/.zsh/zsh-peco-history/zsh-peco-history.zsh
