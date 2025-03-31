@@ -33,7 +33,14 @@ This are the commands that I use most
 | ⌘ ⇧ ⌥ + O       | show symbols current file       |
 | ⌘ + F           | find in file                    |
 | ⌘ ⇧ + O         | show all folders                |
-| ⌃ + \           | split pane vertical             |
+| ⌘ + b           | hide side bar                   |
+| ⌘ ⇧ + b         | hide secondary bar              |
+| ⌃ + .           | my super                        |
+| ⌃ + . i         | inline chat                     |
+| ⌃ + . →         | move forward                    |
+| ⌃ + . ←         | move backward                   |
+| ⌃ + . ↑         | goto definition                 |
+| ⌃ + . ⌥ + \     | split right                     |
 | ⌘ ⇧ ⌥ ⌃ ↑ ↓ → ← |                                 |
 
 ## Vim
@@ -77,6 +84,7 @@ This are the commands that I use most
 | ⌃ s + \|    | split pane vertical        |
 | ⌃ s + -     | split pane horizontal      |
 | ⌃ s + ⇧ + I | install tmux packages      |
+| ⌃ s + [     | enter in vi mode           |
 
 ## Misc
 | Command          | Description             |
@@ -84,6 +92,10 @@ This are the commands that I use most
 | `p10k configure` | runs p10k configuration |
 | ``               |                         |
 
+## Psql 
+| Combination  | Description          |
+| ------------ | -------------------- |
+| `pg_isready` | check if pg is ready |
 
 
 ## References
