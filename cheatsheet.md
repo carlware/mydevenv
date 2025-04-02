@@ -35,12 +35,14 @@ This are the commands that I use most
 | ⌘ ⇧ + O         | show all folders                |
 | ⌘ + b           | hide side bar                   |
 | ⌘ ⇧ + b         | hide secondary bar              |
-| ⌃ + .           | my super                        |
-| ⌃ + . i         | inline chat                     |
-| ⌃ + . →         | move forward                    |
-| ⌃ + . ←         | move backward                   |
-| ⌃ + . ↑         | goto definition                 |
-| ⌃ + . ⌥ + \     | split right                     |
+| ⌃ + s           | my super                        |
+| ⌃ + s i         | inline chat                     |
+| ⌃ + s →         | move forward                    |
+| ⌃ + s ←         | move backward                   |
+| ⌃ + s ↑         | goto definition                 |
+| ⌃ + s  \        | split right                     |
+| ⌃ + s  s        | spell suggestion                |
+| ⌃ + s  b        | bold in markdown                |
 | ⌘ ⇧ ⌥ ⌃ ↑ ↓ → ← |                                 |
 
 ## Vim

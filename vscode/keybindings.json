@@ -27,7 +27,7 @@
         "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
     },
     {
-        "key": "ctrl+. i",
+        "key": "ctrl+s i",
         "command": "inlineChat.start",
         "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
     },
@@ -37,7 +37,7 @@
         "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
     },
     {
-        "key": "ctrl+. left",
+        "key": "ctrl+s left",
         "command": "workbench.action.navigateBack",
         "when": "canNavigateBack"
     },
@@ -47,7 +47,7 @@
         "when": "canNavigateBack"
     },
     {
-        "key": "ctrl+. right",
+        "key": "ctrl+s right",
         "command": "workbench.action.navigateForward",
         "when": "canNavigateForward"
     },
@@ -57,7 +57,7 @@
         "when": "canNavigateForward"
     },
     {
-        "key": "ctrl+. up",
+        "key": "ctrl+s up",
         "command": "editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus"
     },
@@ -67,7 +67,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus"
     },
     {
-        "key": "ctrl+. r",
+        "key": "ctrl+s r",
         "command": "git.revertSelectedRanges",
         "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
     },
@@ -77,11 +77,35 @@
         "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
     },
     {
-        "key": "ctrl+. shift+\\",
+        "key": "ctrl+s \\",
         "command": "workbench.action.splitEditorRight"
     },
     {
         "key": "cmd+k cmd+\\",
         "command": "-workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+s shift+s",
+        "command": "extension.vim_ctrl+s",
+        "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-extension.vim_ctrl+s",
+        "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+s s",
+        "command": "cSpell.suggestSpellingCorrections"
+    },
+    {
+        "key": "ctrl+s b",
+        "command": "markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
     }
 ]
