@@ -35,6 +35,7 @@ This are the commands that I use most
 | ⌘ ⇧ + O         | show all folders                |
 | ⌘ + b           | hide side bar                   |
 | ⌘ ⇧ + b         | hide secondary bar              |
+| ⌘ + pane #      | move between panes              |
 | ⌃ + s           | my super                        |
 | ⌃ + s i         | inline chat                     |
 | ⌃ + s →         | move forward                    |
@@ -43,7 +44,23 @@ This are the commands that I use most
 | ⌃ + s  \        | split right                     |
 | ⌃ + s  s        | spell suggestion                |
 | ⌃ + s  b        | bold in markdown                |
+| ⌃ + s  t        | test current                    |
+| ⌃ + s  c        | compare with branch             |
+| ⌃ + s  `        | create new terminal             |
+| ⌃ + s  f        | open find                       |
+| ⌃ + s  e        | open explorer                   |
+| ⌃ + s  g        | open git                        |
 | ⌘ ⇧ ⌥ ⌃ ↑ ↓ → ← |                                 |
+
+## useful commands
+| Command           | Description |
+| ----------------- | ----------- |
+| focus file        |             |
+| close all editors |             |
+| reveal in finder  |             |
+| jest: setup       |             |
+| format document   |             |
+
 
 ## Vim
 | Combination     | Description | Mode   |
@@ -72,6 +89,7 @@ This are the commands that I use most
 | `tmux new -s $name`          | create a new session |
 | `tmux source ~/.tmux.conf`   | reload tmux app      |
 | `tmux kill-session -t $name` | kill single session  |
+| `tmux start-server`          | start server         |
 
 ### app
 | Command     | Description                |
