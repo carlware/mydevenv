@@ -67,7 +67,12 @@ This are the commands that I use most
 | --------------- | ----------- | ------ |
 | ⌘ + ↑ ↓ → ←     | select text | VISUAL |
 | ⌘ ⇧ ⌥ ⌃ ↑ ↓ → ← |             |        |
- 
+
+### Vim commands 
+| Command     | Description                      |
+| ----------- | -------------------------------- |
+| `set paste` | enabled paste from other sources |
+
 
 ## ASDF
 | Command                       | Description                          |
@@ -116,6 +121,12 @@ This are the commands that I use most
 | Combination  | Description          |
 | ------------ | -------------------- |
 | `pg_isready` | check if pg is ready |
+
+## k8s
+| Combination                                                 | Description                  |
+| ----------------------------------------------------------- | ---------------------------- |
+| `kc run -it --rm --restart=Never NAME --image=golang bash ` | run new image                |
+| `kc exec -it POD_NAME -- bash `                             | attach to existing container |
 
 
 ## References

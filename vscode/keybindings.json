@@ -147,5 +147,13 @@
     {
         "key": "ctrl+a g",
         "command": "workbench.scm.focus"
+    },
+    {
+        "key": "ctrl+a o",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
     }
 ]

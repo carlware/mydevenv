@@ -17,7 +17,7 @@
     "editor.rulers": [
         120
     ],
-    "editor.matchBrackets": "never",
+    "editor.matchBrackets": false,
     "editor.scrollbar.vertical": "hidden",
     "editor.overviewRulerBorder": false,
     "editor.hideCursorInOverviewRuler": true,
@@ -44,7 +44,7 @@
                 "new-session",
                 "-A",
                 "-s",
-                "vscode:${workspaceFolderBasename}",
+                "${workspaceFolderBasename}",
             ]
         }
     },
