@@ -1,24 +1,29 @@
 # Development environment 
 
-
-My development environment for
-1. golang
-2. typescript and react
-3. rust
-4. flutter
-5. k8s
-6. and other stuff
-
+Project to easily install, track and maintain all the tools that I need for my development process.
 
 # TODO
-1. include commands for docker, k8s, git in the cheat sheet
-2. update scripts
-3. automatically update tmux plugins
-4. config vscode tabs backward and forward
+2. add tasks to install and configure all the things that I need
+   1. fonts
+   2. brew packages
+3. add update tasks to update my devenv when it changes
+4. tasks for colima with conf file
+5. tasks for docker and colima 
+6. tasks for setup dbs and common tools for dev 
+   1. redis
+   2. psql
+   3. grafana etc
+7. create a global task
+8. add tasks completion
+9. task with sops
+10. update brew
+11. add or update hosts/dns for manage dbs 
+12. add tasks for k8s
+13. check out brew devcontainers
+14. automatically update tmux plugins
 
 
-## Apps
-My development apps
+## Common apps for my dev
 1. vscode
 2. zsh with oh my zsh
 3. tmux
