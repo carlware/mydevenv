@@ -2,11 +2,35 @@
 
 version: '3'
 
-vars:
-  GREETING: Hello, World!
-
 tasks:
-  default:
+  sys:init:
+    desc: Initialize system
     cmds:
-      - echo "{{.GREETING}}"
-    silent: true
+      - cmd: echo "TODO init dotfiles zsh tmux vimrc powershellrc etc"
+        silence: true
+
+  sys:tasks:  
+    desc: Run system tasks
+    cmds:
+      - cmd: "rm -rf ~/.devtasks && mkdir ~/.devtasks && cp -rf ./Taskfile.yml ~/.devtasks"
+        silence: true
+
+  system:update:
+    desc: Update system packages
+    cmds:
+      - cmd: echo "TODO update tasks brew asdf-plugins vscode-profile user-settings dotfiles-changes"
+        silence: true
+
+  system:config:
+    desc: Configure system settings
+    cmds:
+      - cmd: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false 
+        desc: Disable press and hold for VSCode
+        silence: true
+      - cmd: |
+          if ! gum confirm "Increasing key rate allow you type faster would you like continue?"; then
+            defaults write -g KeyRepeat -int 2
+            defaults write -g InitialKeyRepeat -int 20
+          fi
+        desc: Increase key repeat rate
+        silence: true
