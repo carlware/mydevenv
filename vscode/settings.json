@@ -6,7 +6,7 @@
     "editor.letterSpacing": 0.2,
     "editor.minimap.enabled": false,
     "editor.wordWrap": "on",
-    "editor.lineNumbers": "off",
+    "editor.lineNumbers": "on",
     "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
     "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
     "editor.quickSuggestions": {
@@ -109,7 +109,8 @@
     "[go]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": "always"
+            "source.organizeImports": "always",
+            "source.fixAll": "always"
         }
     },
     "database-client.splitEditorWhenQuery": false,
@@ -122,4 +123,9 @@
     // testing
     "jest.runMode": "on-demand",
     "testing.automaticallyOpenPeekView": "never",
+    // vim
+    "vim.smartRelativeLine": true,
+    "vim.showMarksInGutter": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
 }

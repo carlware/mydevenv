@@ -1,0 +1,57 @@
+{
+  "editor.minimap.enabled": false,
+  "window.titleBarStyle": "native",
+  "window.newWindowProfile": "CRL",
+  "window.newWindowDimensions": "maximized",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "g",
+        "i"
+      ],
+      "commands": [
+        "editor.action.goToImplementation"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+      ],
+      "commands": [
+        "workbench.action.showCommands",
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<leader>",
+        "p"
+      ],
+      "commands": [
+        "workbench.action.quickOpen",
+      ],
+      "silent": true
+    },
+    {
+      "before": [
+        "<leader>",
+        "e"
+      ],
+      "commands": [
+        "workbench.files.action.focusOpenEditorsView",
+      ],
+      "silent": true
+    },
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+}
