@@ -2,23 +2,27 @@
 
 version: '3'
 
+# add preconditions to tasks
 tasks:
   sys:init:
     desc: Initialize system
     cmds:
       - cmd: echo "TODO init dotfiles zsh tmux vimrc powershellrc etc"
+      # TODO update xcode tools
         silence: true
 
   sys:tasks:  
     desc: Run system tasks
     cmds:
       - cmd: "rm -rf ~/.devtasks && mkdir ~/.devtasks && cp -rf ./Taskfile.yml ~/.devtasks"
+      # TODO: append alias if not exists
         silence: true
 
   system:update:
     desc: Update system packages
     cmds:
       - cmd: echo "TODO update tasks brew asdf-plugins vscode-profile user-settings dotfiles-changes"
+      # TODO update xcode tools
         silence: true
 
   system:config:
