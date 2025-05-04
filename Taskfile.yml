@@ -31,6 +31,7 @@ tasks:
       - cmd: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false 
         desc: Disable press and hold for VSCode
         silence: true
+      # - cmd: defaults write -g ApplePressAndHoldEnabled -bool false   
       - cmd: |
           if ! gum confirm "Increasing key rate allow you type faster would you like continue?"; then
             defaults write -g KeyRepeat -int 2
