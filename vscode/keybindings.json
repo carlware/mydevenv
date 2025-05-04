@@ -27,58 +27,9 @@
         "when": "inlineEditIsVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionVisible && tabShouldAcceptInlineEdit && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
     },
     {
-        "key": "ctrl+a i",
-        "command": "inlineChat.start",
-        "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
-    },
-    {
-        "key": "cmd+i",
-        "command": "-inlineChat.start",
-        "when": "editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
-    },
-    {
-        "key": "ctrl+a left",
-        "command": "workbench.action.navigateBack",
-        "when": "canNavigateBack"
-    },
-    {
-        "key": "ctrl+-",
-        "command": "-workbench.action.navigateBack",
-        "when": "canNavigateBack"
-    },
-    {
-        "key": "ctrl+a right",
-        "command": "workbench.action.navigateForward",
-        "when": "canNavigateForward"
-    },
-    {
-        "key": "ctrl+shift+-",
-        "command": "-workbench.action.navigateForward",
-        "when": "canNavigateForward"
-    },
-    {
-        "key": "ctrl+a up",
-        "command": "editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "f12",
-        "command": "-editor.action.revealDefinition",
-        "when": "editorHasDefinitionProvider && editorTextFocus"
-    },
-    {
-        "key": "ctrl+a r",
-        "command": "git.revertSelectedRanges",
-        "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
-    },
-    {
         "key": "cmd+k cmd+r",
         "command": "-git.revertSelectedRanges",
         "when": "editorTextFocus && !operationInProgress && resourceScheme == 'file'"
-    },
-    {
-        "key": "ctrl+a \\",
-        "command": "workbench.action.splitEditorRight"
     },
     {
         "key": "cmd+k cmd+\\",
@@ -95,23 +46,9 @@
         "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
     },
     {
-        "key": "ctrl+a s",
-        "command": "cSpell.suggestSpellingCorrections"
-    },
-    {
-        "key": "ctrl+a b",
-        "command": "markdown.extension.editing.toggleBold",
-        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
-    },
-    {
         "key": "cmd+b",
         "command": "-markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
-    },
-    {
-        "key": "ctrl+a t",
-        "command": "testing.runAtCursor",
-        "when": "editorTextFocus"
     },
     {
         "key": "cmd+; c",
@@ -119,7 +56,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+a f",
+        "key": "cmd+e",
         "command": "workbench.action.findInFiles"
     },
     {
@@ -127,15 +64,7 @@
         "command": "-workbench.action.findInFiles"
     },
     {
-        "key": "ctrl+a c",
-        "command": "gitlens.compareWorkingWith"
-    },
-    {
-        "key": "ctrl+a `",
-        "command": "workbench.action.createTerminalEditor"
-    },
-    {
-        "key": "ctrl+a e",
+        "key": "cmd+m",
         "command": "workbench.files.action.focusOpenEditorsView",
         "when": "workbench.explorer.openEditorsView.active"
     },
@@ -145,15 +74,61 @@
         "when": "workbench.explorer.openEditorsView.active"
     },
     {
-        "key": "ctrl+a g",
-        "command": "workbench.scm.focus"
-    },
-    {
-        "key": "ctrl+a o",
+        "key": "alt+cmd+m",
         "command": "workbench.action.openRecent"
     },
     {
         "key": "ctrl+r",
         "command": "-workbench.action.openRecent"
-    }
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "shift+cmd+p",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "cmd+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "cmd+q",
+        "command": "workbench.action.quickchat.toggle",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "shift+alt+cmd+l",
+        "command": "-workbench.action.quickchat.toggle",
+        "when": "chatIsEnabled"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.action.chat.open"
+    },
+    {
+        "key": "cmd+s",
+        "command": "-issue.createIssueFromFile",
+        "when": "!issues.creatingFromFile && resourceScheme == 'newIssue' && config.files.autoSave != 'off'"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+        "when": "accessibilityHelpIsShown"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
+    },
+    {
+        "key": "cmd+m",
+        "command": "-markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+    },
 ]

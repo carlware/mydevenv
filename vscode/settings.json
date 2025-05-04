@@ -17,7 +17,7 @@
     "editor.rulers": [
         120
     ],
-    "editor.matchBrackets": false,
+    "editor.matchBrackets": "never",
     "editor.scrollbar.vertical": "hidden",
     "editor.overviewRulerBorder": false,
     "editor.hideCursorInOverviewRuler": true,
@@ -128,4 +128,9 @@
     "vim.showMarksInGutter": true,
     "vim.useSystemClipboard": true,
     "vim.leader": "<space>",
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.searchHighlightColor": "#734d00",
+    "vim.searchMatchColor": "#ffaa00",
+    "vim.searchMatchTextColor": "#000000"
 }

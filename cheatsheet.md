@@ -15,44 +15,45 @@ This are the commands that I use most
 ## VSCode
 | Combination     | Description                     |
 | --------------- | ------------------------------- |
-| ⌃ ⌘ + →         | Split pane                      |
-| ⌘ + w           | close window                    |
 | ⌘ ⌥ + → ←       | navigate panes                  |
 | ⌘ + d           | select next instance            |
-| ⌘ ⇧ + L         | select all instances            |
+| ⌘ ⇧ + l         | select all instances            |
 | ⌘ ⌥ + ↑ ↓       | multi cursor vertical selection |
-| fn f2           | rename symbol                   |
-| ⌘ ⇧ + P         | open command palette            |
-| ⌘ + P           | search file                     |
-| ⌃ + -           | go back from definition         |
-| ⌃ ⇧ + -         | go forward from definition      |
-| ⌘ ⇧ + N         | open new window                 |
-| ⌘ + ,           | open settings                   |
-| ⇧ ⌥ + F         | format document                 |
-| ⌘ + T           | show all symbols                |
-| ⌘ ⇧ ⌥ + O       | show symbols current file       |
-| ⌘ + F           | find in file                    |
-| ⌘ ⇧ + O         | show all folders                |
-| ⌘ + b           | hide side bar                   |
-| ⌘ ⇧ + b         | hide secondary bar              |
+| ⇧ ⌥ + f         | format document                 |
 | ⌘ + pane #      | move between panes              |
-| ⌃ + s           | my super                        |
-| ⌃ + s i         | inline chat                     |
-| ⌃ + s →         | move forward                    |
-| ⌃ + s ←         | move backward                   |
-| ⌃ + s ↑         | goto definition                 |
-| ⌃ + s  \        | split right                     |
-| ⌃ + s  s        | spell suggestion                |
-| ⌃ + s  b        | bold in markdown                |
-| ⌃ + s  t        | test current                    |
-| ⌃ + s  c        | compare with branch             |
-| ⌃ + s  `        | create new terminal             |
-| ⌃ + s  f        | open find                       |
-| ⌃ + s  e        | open explorer                   |
-| ⌃ + s  g        | open git                        |
+|                 |                                 |
+| ⌘ + w           | close window                    |
+| ⌘ + f           | find in file                    |
+| ⌘ ⇧ ⌥ + O       | show symbols current file       |
+| ⌘ + t           | show all symbols                |
+| ⌘ ⇧ + n         | open new window                 |
+| ⌘ + 0-9         | switch split pane               |
+| ⌃ + 0-9         | switch window                   |
+|                 |                                 |
+| ⌘ + b           | toggle right panel              |
+| ⌘ + j           | toggle bottom panel             |
+| ⌘ ⌥ + b         | toggle left panel               |
+| ⌘ + e           | search file                     |
+| ⌘ + m           | open file explorer              |
+| ⌘ ⌥ + m         | open recent project             |
+| ⌘ + l           | open command palette            |
+| ⌘ + q           | quick AI chat                   |
 | ⌘ ⇧ ⌥ ⌃ ↑ ↓ → ← |                                 |
 
-## useful commands
+### Vim + VSCode commands
+| Combination  | Description         |
+| ------------ | ------------------- |
+| <leader>     | space               |
+| <leader> + i | inline chat         |
+| <leader> + s | spell suggestion    |
+| <leader> + x | create new terminal |
+| <leader> + c | compare with branch |
+| <leader> + v | split right         |
+| <leader> + t | test current        |
+| <leader> + r | revert line changes |
+|              |                     |
+
+## Useful commands
 | Command           | Description |
 | ----------------- | ----------- |
 | focus file        |             |

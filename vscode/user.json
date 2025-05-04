@@ -16,31 +16,76 @@
     {
       "before": [
         "<leader>",
+        "m"
       ],
       "commands": [
-        "workbench.action.showCommands",
+        "workbench.action.closeSidebar",
+        "workbench.action.closePanel",
+        "workbench.action.closeAuxiliaryBar",
       ],
-      "silent": true
     },
     {
       "before": [
         "<leader>",
-        "p"
+        "x"
       ],
       "commands": [
-        "workbench.action.quickOpen",
+        "workbench.action.createTerminalEditor",
       ],
-      "silent": true
     },
     {
       "before": [
         "<leader>",
-        "e"
+        "i"
       ],
       "commands": [
-        "workbench.files.action.focusOpenEditorsView",
+        "inlineChat.start",
       ],
-      "silent": true
+    },
+    {
+      "before": [
+        "<leader>",
+        "s"
+      ],
+      "commands": [
+        "cSpell.suggestSpellingCorrections",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "c"
+      ],
+      "commands": [
+        "gitlens.compareWorkingWith",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "t"
+      ],
+      "commands": [
+        "testing.runAtCursor",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "git.revertSelectedRanges",
+      ],
     },
   ],
   "vim.insertModeKeyBindings": [
@@ -52,6 +97,15 @@
       "after": [
         "<Esc>"
       ]
-    }
+    },
+    {
+      "before": [
+        "l",
+        "l"
+      ],
+      "commands": [
+        "editor.action.inlineSuggest.commit"
+      ]
+    },
   ],
 }
