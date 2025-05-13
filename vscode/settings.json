@@ -69,11 +69,13 @@
     },
     // apps specific
     "cSpell.userWords": [
+        "Meddpicc",
         "olivere",
         "ollama",
         "salesloft",
         "sobjects",
-        "stretchr"
+        "stretchr",
+        "Tajin",
     ],
     "cSpell.ignoreWords": [
         "cotype"
@@ -132,5 +134,5 @@
     "vim.hlsearch": true,
     "vim.searchHighlightColor": "#734d00",
     "vim.searchMatchColor": "#ffaa00",
-    "vim.searchMatchTextColor": "#000000"
+    "vim.searchMatchTextColor": "#000000",
 }

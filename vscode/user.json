@@ -81,12 +81,40 @@
     {
       "before": [
         "<leader>",
+        "t",
+        "a"
+      ],
+      "commands": [
+        "testing.runCurrentFile",
+      ],
+    },
+    {
+      "before": [
+        "<leader>",
         "r"
       ],
       "commands": [
         "git.revertSelectedRanges",
       ],
     },
+    {
+      "before": [
+        "<leader>",
+        "r",
+        "e"
+      ],
+      "commands": [
+        "editor.action.rename",
+      ],
+    },
+    {
+      "before": [
+        "<C-w>",
+      ],
+      "after": [
+        "<C-y>",
+      ],
+    }
   ],
   "vim.insertModeKeyBindings": [
     {
@@ -100,8 +128,8 @@
     },
     {
       "before": [
-        "l",
-        "l"
+        ",",
+        "."
       ],
       "commands": [
         "editor.action.inlineSuggest.commit"
